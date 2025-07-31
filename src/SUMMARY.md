@@ -32,9 +32,9 @@
   - [Real-Time Data Streaming](./Crypto_Market_Data/Data_Defination_Sheet/10-real-time-data-streamin.md)
   - [Compliance & Security](./Crypto_Market_Data/Data_Defination_Sheet/11-compliance--security.md)
 
-- [Class Diagram](./class_diagram.md)
-- [ER Diagram](./er_diagram.md)
-- [Data Flow Diagram (DFD)](./dfd.md)
+- [Class Diagram](./Crypto_Market_Data/class_diagram.md)
+- [ER Diagram](./Crypto_Market_Data/er_diagram.md)
+- [Data Flow Diagram (DFD)](./Crypto_Market_Data/dfd.md)
 
 # RPC Node Provider Service
 
