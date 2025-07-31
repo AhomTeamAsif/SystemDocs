@@ -4,6 +4,8 @@
 
 This institutional-grade cryptocurrency market intelligence platform has been proposed by **Sagar, Walid, and Asif** from the blockchain team at **AlXICorn**, in response to organizational requirements for comprehensive market data solutions.
 
+The prototype that we have built is available [Aggregated Crypto Price](https://price-api-server-demo.onrender.com/docs).
+
 ## Overview
 
 This platform delivers institutional-grade cryptocurrency market intelligence through a unified data pipeline connecting:
@@ -105,7 +107,7 @@ Solve critical market fragmentation through:
 
 | Capability            | Industry Standard | Our Platform                            | Advantage              |
 | --------------------- | ----------------- | --------------------------------------- | ---------------------- |
-| Data latency          | 15-60 seconds     | **5-10s**                               | 20-200x faster         |
+| Data latency          | 15-60 seconds     | **5-10s**                               | 15-20x faster          |
 | Price sources         | 50-100            | **300+**                                | 3x coverage            |
 | Blockchain networks   | 10-20             | **100+**                                | Full EVM/non-EVM       |
 | DEX protocol coverage | Top 50            | **200+**                                | Emerging market        |
