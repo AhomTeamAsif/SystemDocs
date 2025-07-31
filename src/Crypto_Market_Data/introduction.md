@@ -2,9 +2,9 @@
 
 # Crypto Market Data Aggregator
 
-This institutional-grade cryptocurrency market intelligence platform has been proposed by **Sagar, Walid, and Asif** from the blockchain team at **AlXICorn**, in response to organizational requirements for comprehensive market data solutions.
+This institutional-grade cryptocurrency market intelligence platform has been proposed by **Sagar, Walid, and Asif** from the blockchain team at **ALXICORN**, in response to organizational requirements for comprehensive market data solutions.
 
-The prototype that we have built is available [Aggregated Crypto Price](https://price-api-server-demo.onrender.com/docs).
+The prototype that we have built is available here -> <a href="https://price-api-server-demo.onrender.com/docs" target="_blank">🔗 Crypto Price Prototype </a>
 
 ## Overview
 
