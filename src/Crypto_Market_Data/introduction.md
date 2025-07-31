@@ -2,9 +2,7 @@
 
 # Crypto Market Data Aggregator
 
-**Enterprise-Grade Market Data Infrastructure**
-
----
+This institutional-grade cryptocurrency market intelligence platform has been proposed by **Sagar, Walid, and Asif** from the blockchain team at **AlXICorn**, in response to organizational requirements for comprehensive market data solutions.
 
 ## Overview
 
@@ -115,7 +113,7 @@ Solve critical market fragmentation through:
 
 ---
 
-## Getting Started
+## Platform Applications
 
 1. **Real-time trading systems**
 
