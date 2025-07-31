@@ -98,3 +98,7 @@ Fair value provides a baseline for evaluating current prices and identifying goo
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635970275686&cot=10" target="_blank"> Price Aggregation Engine </a>
 
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635928237147&cot=14" target="_blank"> Time Series Data Generation </a>
+
+# 📊 Data Definition and Entity Relations
+
+[🔗 Price Aggregation Data Entities & Relations ](../Data_Defination_Sheet/4-price-aggregation--analytics-engine.md){:target="\_blank"}

@@ -115,3 +115,7 @@ Researchers and quantitative analysts require bulk historical datasets for analy
 ## 📊 Visual References & Diagrams
 
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635976081674&cot=10" target="_blank"> API & Data Distribution Architecture </a>
+
+# 📊 Data Definition and Entity Relations
+
+[🔗 API Data Distrubution Data Entities & Relations ](../Data_Defination_Sheet/9-api-data-distribution.md){:target="\_blank"}

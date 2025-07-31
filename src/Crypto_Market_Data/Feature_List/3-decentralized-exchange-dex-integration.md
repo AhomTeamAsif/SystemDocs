@@ -79,6 +79,11 @@ Tokens often exist on multiple chains, and price differences can be exploited. C
 ## 📊 Visual References & Diagrams
 
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635929424258&cot=14" target="_blank"> DEX Protocol Coverage Overview </a>
+
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635928237147&cot=14" target="_blank"> On-Chain Data Infrastructure </a>
 
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635928237147&cot=14" target="_blank"> On-Chain Data Infrastructure </a>
+
+# 📊 Data Definition and Entity Relations
+
+[🔗 Decentralized Data Entities & Relations ](../Data_Defination_Sheet/3-decentralized-exchange-dex-integration.md){:target="\_blank"}

@@ -102,3 +102,7 @@ Enterprise clients require tailored agreements beyond standard subscriptions, su
 ## 📊 Visual References & Diagrams
 
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635538261089&cot=14" target="_blank"> Subscription Management Flow </a>
+
+# 📊 Data Definition and Entity Relations
+
+[🔗 Subscription & Bill Managemnet Data Entities & Relations ](../Data_Defination_Sheet/12-subscription--billing-management.md){:target="\_blank"}

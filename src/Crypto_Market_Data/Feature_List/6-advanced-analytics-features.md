@@ -61,3 +61,7 @@ Volatility is crucial for trading strategies, option pricing, and risk managemen
 ## 📊 Visual References & Diagrams
 
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635970491038&cot=10" target="_blank"> Advanced Analysis Flow </a>
+
+# 📊 Data Definition and Entity Relations
+
+[🔗 Advanced Data Entities & Relations ](../Data_Defination_Sheet/6-advanced-analytics-features.md){:target="\_blank"}

@@ -81,3 +81,7 @@ Different applications need different access levels. Scoped keys reduce security
 ## 📊 Visual References & Diagrams
 
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635973940032&cot=10" target="_blank"> API Key Management Flow </a>
+
+# 📊 Data Definition and Entity Relations
+
+[🔗 API Key Managemnet Data Entities & Relations ](../Data_Defination_Sheet/7-api-key-management--authentication.md){:target="\_blank"}
