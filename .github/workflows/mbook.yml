@@ -3,31 +3,30 @@ name: Deploy mdBook to GitHub Pages
 on:
   push:
     branches:
-      - main  # Or your default branch where mdBook source is
+      - main # Or your default branch where mdBook source is
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout source
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
+      - name: Checkout source
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-    - name: Install mdBook
-      run: |
-        MDVERSION="v0.4.27"
-    curl -LO https://github.com/rust-lang/mdBook/releases/download/${MDVERSION}/mdbook-${MDVERSION}-x86_64-unknown-linux-gnu.tar.gz
-    tar -xzf mdbook-${MDVERSION}-x86_64-unknown-linux-gnu.tar.gz
-    sudo mv mdbook /usr/local/bin/mdbook
-    mdbook --version
+      - name: Install mdBook
+        run: |
+          MDVERSION="v0.4.27"
+          curl -LO https://github.com/rust-lang/mdBook/releases/download/${MDVERSION}/mdbook-${MDVERSION}-x86_64-unknown-linux-gnu.tar.gz
+          tar -xzf mdbook-${MDVERSION}-x86_64-unknown-linux-gnu.tar.gz
+          sudo mv mdbook /usr/local/bin/mdbook
+          mdbook --version
 
-    - name: Build mdBook
-      run: mdbook build
+      - name: Build mdBook
+        run: mdbook build
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./book
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book
