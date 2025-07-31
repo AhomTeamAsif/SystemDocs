@@ -97,6 +97,6 @@ Exchanges impose strict API rate limits; exceeding them causes bans or suspensio
 
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635931036520&cot=14" target="_blank"> CEX Integration Data Flow </a>
 
-# 📊 Data Definition and Entity Relations
+## 📊 Data Definition and Entity Relations
 
 <a href="../Data_Defination_Sheet/2-centralized-exchange-cex-integration.md" target="_blank">🔗 CEX Data Scraping & Processing Data Entities & Relations</a>

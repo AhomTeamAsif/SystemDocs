@@ -84,6 +84,6 @@ Ensures optimal resource use and flexibility to adapt to changing conditions.
 
 <a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635539448293&cot=14" target="_blank"> Rate Limiting & Quota Management Flow </a>
 
-# 📊 Data Definition and Entity Relations
+## 📊 Data Definition and Entity Relations
 
 <a href="../Data_Defination_Sheet/7-api-key-management--authentication.md" target="_blank">🔗 API Rate-Limiting Management Data Entities</a>
