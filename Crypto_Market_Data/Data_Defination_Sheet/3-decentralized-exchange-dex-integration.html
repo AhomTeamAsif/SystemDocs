@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Decentralized Exchange (DEX) Integration - SystemDocs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Crypto Market Data Aggregator</li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/feature_list.html"><strong aria-hidden="true">2.</strong> Features Overview </a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/1-blockchain-data-infrastructure.html"><strong aria-hidden="true">2.1.</strong> BLOCKCHAIN DATA INFRASTRUCTURE</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/2-centralized-exchange-cex-integration.html"><strong aria-hidden="true">2.2.</strong> CENTRALIZED EXCHANGE (CEX) INTEGRATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/3-decentralized-exchange-dex-integration.html"><strong aria-hidden="true">2.3.</strong> DECENTRALIZED EXCHANGE (DEX) INTEGRATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/4-price-aggregation--analytics-engine.html"><strong aria-hidden="true">2.4.</strong> PRICE AGGREGATION & ANALYTICS ENGINE</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/5-time-series-data-generation.html"><strong aria-hidden="true">2.5.</strong> TIME-SERIES DATA GENERATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/6-advanced-analytics-features.html"><strong aria-hidden="true">2.6.</strong> ADVANCED ANALYTICS FEATURES</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/7-user-authentication--authorization.html"><strong aria-hidden="true">2.7.</strong> USER AUTHENTICATION & AUTHORIZATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/8-api-key-management--authentication.html"><strong aria-hidden="true">2.8.</strong> API KEY MANAGEMENT & AUTHENTICATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/9-subscription--billing-management.html"><strong aria-hidden="true">2.9.</strong> SUBSCRIPTION & BILLING MANAGEMENT</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/10-rate-limiting--quota-management.html"><strong aria-hidden="true">2.10.</strong> RATE LIMITING & QUOTA MANAGEMENT</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/11-api--data-distribution.html"><strong aria-hidden="true">2.11.</strong> API & DATA DISTRIBUTION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/12-real-time-data-streaming.html"><strong aria-hidden="true">2.12.</strong> REAL-TIME DATA STREAMING</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/13-compliance--security.html"><strong aria-hidden="true">2.13.</strong> COMPLIANCE & SECURITY</a></li></ol></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/data_definition_sheet.html"><strong aria-hidden="true">3.</strong>  Data Definition Overview</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/1-blockchain-data-infrastructure.html"><strong aria-hidden="true">3.1.</strong> Blockchain Data Infrastructure</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/2-centralized-exchange-cex-integration.html"><strong aria-hidden="true">3.2.</strong> Centralized Exchange (CEX) Integration</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/3-decentralized-exchange-dex-integration.html" class="active"><strong aria-hidden="true">3.3.</strong> Decentralized Exchange (DEX) Integration</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/4-price-aggregation--analytics-engine.html"><strong aria-hidden="true">3.4.</strong> Price Aggregation & Analytics Engine</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/5-time-series-data-generation.html"><strong aria-hidden="true">3.5.</strong> Time-Series Data Generation</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/6-advanced-analytics-features.html"><strong aria-hidden="true">3.6.</strong> Advanced Analytics Features</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/7-api-key-management--authentication.html"><strong aria-hidden="true">3.7.</strong> API Key Management & Authentication</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/12-subscription--billing-management.html"><strong aria-hidden="true">3.8.</strong> Subscription & Billing Management</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/8-rate-limiting--quota-management.html"><strong aria-hidden="true">3.9.</strong> Rate Limiting & Quota Management</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/9-api-data-distribution.html"><strong aria-hidden="true">3.10.</strong> API & Data Distribution</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/10-real-time-data-streamin.html"><strong aria-hidden="true">3.11.</strong> Real-Time Data Streaming</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/11-compliance--security.html"><strong aria-hidden="true">3.12.</strong> Compliance & Security</a></li></ol></li><li class="chapter-item expanded "><a href="../../class_diagram.html"><strong aria-hidden="true">4.</strong> Class Diagram</a></li><li class="chapter-item expanded "><a href="../../er_diagram.html"><strong aria-hidden="true">5.</strong> ER Diagram</a></li><li class="chapter-item expanded "><a href="../../dfd.html"><strong aria-hidden="true">6.</strong> Data Flow Diagram (DFD)</a></li><li class="chapter-item expanded affix "><li class="part-title">RPC Node Provider Service</li><li class="chapter-item expanded "><a href="../../Introduction_rpc.html"><strong aria-hidden="true">7.</strong> RPC Node Provider Service</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">SystemDocs</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="decentralized-exchange-dex-integration"><a class="header" href="#decentralized-exchange-dex-integration">Decentralized Exchange (DEX) Integration</a></h1>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p>This document specifies the data models required to support the platform's Decentralized Exchange (DEX) Integration features. The design focuses on:</p>
+<ul>
+<li>Comprehensive protocol coverage</li>
+<li>Automated discovery of liquidity pools</li>
+<li>Accurate price calculations</li>
+</ul>
+<p>These models handle the diverse and dynamic nature of DeFi, storing data on blockchains, DEX protocols, liquidity pools, and their real-time states.</p>
+<hr />
+<h2 id="entity-relationships"><a class="header" href="#entity-relationships">Entity Relationships</a></h2>
+<p>The following relationships logically separate static protocol configurations from dynamic, high-frequency market data:</p>
+<h3 id="blockchain--dexprotocol"><a class="header" href="#blockchain--dexprotocol"><code>Blockchain</code> ⇄ <code>DexProtocol</code></a></h3>
+<ul>
+<li><strong>Cardinality:</strong> One-to-Many (1 → *)</li>
+<li><strong>Description:</strong> Each blockchain (e.g., Ethereum) can host multiple DEX protocols (e.g., Uniswap V3, Curve). Each DEX protocol is tied to a single blockchain.</li>
+</ul>
+<hr />
+<h3 id="dexprotocol--liquiditypool"><a class="header" href="#dexprotocol--liquiditypool"><code>DexProtocol</code> ⇄ <code>LiquidityPool</code></a></h3>
+<ul>
+<li><strong>Cardinality:</strong> One-to-Many (1 → *)</li>
+<li><strong>Description:</strong> A DEX protocol consists of many liquidity pools. Each pool represents a trading pair and is uniquely associated with a protocol.</li>
+</ul>
+<hr />
+<h3 id="liquiditypool--poolstate"><a class="header" href="#liquiditypool--poolstate"><code>LiquidityPool</code> ⇄ <code>PoolState</code></a></h3>
+<ul>
+<li><strong>Cardinality:</strong> One-to-One (1 → 1)</li>
+<li><strong>Description:</strong>
+<ul>
+<li><code>LiquidityPool</code> stores static market data (e.g., tokens, fee tier).</li>
+<li><code>PoolState</code> stores dynamic, frequently updated data (e.g., reserves, current tick).</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="liquiditypool--dexswap"><a class="header" href="#liquiditypool--dexswap"><code>LiquidityPool</code> ⇄ <code>DexSwap</code></a></h3>
+<ul>
+<li><strong>Cardinality:</strong> One-to-Many (1 → *)</li>
+<li><strong>Description:</strong> A liquidity pool handles many swaps. Each swap is a unique entry in the <code>DexSwap</code> table, allowing complete historical trade tracking.</li>
+</ul>
+<hr />
+<h2 id="tables--fields"><a class="header" href="#tables--fields">Tables &amp; Fields</a></h2>
+<h3 id="-blockchain"><a class="header" href="#-blockchain">🧱 Blockchain</a></h3>
+<p>Master list of supported blockchain networks.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>chain_id</code></td><td>Integer</td><td>Yes</td><td>e.g., 1, 137</td><td>Unique numeric ID of the blockchain. <strong>(PK)</strong></td></tr>
+<tr><td><code>name</code></td><td>String</td><td>Yes</td><td>e.g., &quot;Ethereum&quot;</td><td>Common name of the blockchain</td></tr>
+<tr><td><code>symbol</code></td><td>String</td><td>Yes</td><td>e.g., &quot;ETH&quot;</td><td>Native currency symbol</td></tr>
+<tr><td><code>rpc_url</code></td><td>String</td><td>Yes</td><td>URL</td><td>JSON-RPC endpoint</td></tr>
+<tr><td><code>explorer_url</code></td><td>String</td><td>Yes</td><td>URL</td><td>Base URL of the block explorer</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h3 id="-dexprotocol"><a class="header" href="#-dexprotocol">🧱 DexProtocol</a></h3>
+<p>DEX protocol configurations and metadata.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>protocol_id</code></td><td>UUID</td><td>Yes</td><td>UUID</td><td>Internal DEX protocol ID <strong>(PK)</strong></td></tr>
+<tr><td><code>chain_id</code></td><td>Integer</td><td>Yes</td><td>Numeric</td><td>FK to <code>Blockchain.chain_id</code></td></tr>
+<tr><td><code>name</code></td><td>String</td><td>Yes</td><td>e.g., &quot;Uniswap V3&quot;</td><td>DEX name</td></tr>
+<tr><td><code>version</code></td><td>String</td><td>No</td><td>e.g., &quot;3.0&quot;</td><td>Protocol version</td></tr>
+<tr><td><code>factory_address</code></td><td>String</td><td>Yes</td><td>Hex Address</td><td>Address of the protocol’s factory smart contract</td></tr>
+<tr><td><code>amm_type</code></td><td>Enum</td><td>Yes</td><td>AMM Type Enum</td><td>Type of AMM (e.g., CONSTANT_PRODUCT, STABLESWAP)</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h3 id="-liquiditypool"><a class="header" href="#-liquiditypool">🧱 LiquidityPool</a></h3>
+<p>Registry of all liquidity pools discovered.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>pool_id</code></td><td>UUID</td><td>Yes</td><td>UUID</td><td>Internal ID for the pool <strong>(PK)</strong></td></tr>
+<tr><td><code>protocol_id</code></td><td>UUID</td><td>Yes</td><td>UUID</td><td>FK to <code>DexProtocol.protocol_id</code></td></tr>
+<tr><td><code>pool_address</code></td><td>String</td><td>Yes</td><td>Hex Address</td><td>Address of pool smart contract</td></tr>
+<tr><td><code>token0_asset_id</code></td><td>UUID</td><td>Yes</td><td>UUID</td><td>FK to <code>Asset.asset_id</code> (token0)</td></tr>
+<tr><td><code>token1_asset_id</code></td><td>UUID</td><td>Yes</td><td>UUID</td><td>FK to <code>Asset.asset_id</code> (token1)</td></tr>
+<tr><td><code>fee_tier</code></td><td>Decimal(5,4)</td><td>No</td><td>Numeric</td><td>Swap fee percentage (e.g., 0.0030 = 0.3%)</td></tr>
+<tr><td><code>status</code></td><td>Enum</td><td>Yes</td><td>ACTIVE/UNVERIFIED</td><td>Pool verification status</td></tr>
+<tr><td><code>creation_block</code></td><td>BigInt</td><td>Yes</td><td>Numeric</td><td>Block number when the pool was created</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h3 id="-poolstate"><a class="header" href="#-poolstate">🧱 PoolState</a></h3>
+<p>Real-time state of a liquidity pool.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>pool_id</code></td><td>UUID</td><td>Yes</td><td>UUID</td><td>FK to <code>LiquidityPool.pool_id</code> <strong>(PK)</strong></td></tr>
+<tr><td><code>reserve0</code></td><td>String</td><td>Yes</td><td>BigInt</td><td>Total reserve of token0</td></tr>
+<tr><td><code>reserve1</code></td><td>String</td><td>Yes</td><td>BigInt</td><td>Total reserve of token1</td></tr>
+<tr><td><code>total_liquidity</code></td><td>String</td><td>No</td><td>BigInt</td><td>Total liquidity (optional for some AMMs)</td></tr>
+<tr><td><code>current_tick</code></td><td>Integer</td><td>No</td><td>Numeric</td><td>Current tick for concentrated liquidity AMMs</td></tr>
+<tr><td><code>last_updated_at</code></td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>Time of last update</td></tr>
+<tr><td><code>last_updated_block</code></td><td>BigInt</td><td>Yes</td><td>Numeric</td><td>Block number of last update</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h3 id="-dexswap"><a class="header" href="#-dexswap">🧱 DexSwap</a></h3>
+<p>Logs of every swap executed in pools.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>tx_hash</code></td><td>String</td><td>Yes</td><td>Hex String</td><td>On-chain transaction hash <strong>(PK)</strong></td></tr>
+<tr><td><code>pool_id</code></td><td>UUID</td><td>Yes</td><td>UUID</td><td>FK to <code>LiquidityPool.pool_id</code></td></tr>
+<tr><td><code>block_number</code></td><td>BigInt</td><td>Yes</td><td>Numeric</td><td>Block number of the swap</td></tr>
+<tr><td><code>trader_address</code></td><td>String</td><td>Yes</td><td>Hex Address</td><td>Address of swap initiator</td></tr>
+<tr><td><code>amount_in</code></td><td>String</td><td>Yes</td><td>BigInt</td><td>Input token amount</td></tr>
+<tr><td><code>amount_out</code></td><td>String</td><td>Yes</td><td>BigInt</td><td>Output token amount</td></tr>
+<tr><td><code>token_in_asset_id</code></td><td>UUID</td><td>Yes</td><td>UUID</td><td>FK to <code>Asset.asset_id</code> (input token)</td></tr>
+<tr><td><code>token_out_asset_id</code></td><td>UUID</td><td>Yes</td><td>UUID</td><td>FK to <code>Asset.asset_id</code> (output token)</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h2 id="relationships-summary"><a class="header" href="#relationships-summary">Relationships Summary</a></h2>
+<pre><code class="language-text">Blockchain [chain_id (PK)]
+ └── 1 → * DexProtocol [protocol_id (PK), chain_id (FK)]
+
+DexProtocol [protocol_id (PK)]
+ └── 1 → * LiquidityPool [pool_id (PK), protocol_id (FK)]
+
+Asset [asset_id (PK)]
+ ├── 1 → * LiquidityPool [token0_asset_id (FK)]
+ └── 1 → * LiquidityPool [token1_asset_id (FK)]
+
+LiquidityPool [pool_id (PK)]
+ ├── 1 → 1 PoolState [pool_id (PK, FK)]
+ └── 1 → * DexSwap [tx_hash (PK), pool_id (FK)]
+
+Asset [asset_id (PK)]
+ ├── 1 → * DexSwap [token_in_asset_id (FK)]
+ └── 1 → * DexSwap [token_out_asset_id (FK)]
+</code></pre>
+<h2 id="erd-summary"><a class="header" href="#erd-summary">ERD Summary</a></h2>
+<h3 id="-blockchain-1"><a class="header" href="#-blockchain-1">📦 Blockchain</a></h3>
+<ul>
+<li><code>chain_id</code> — <strong>Primary Key (PK)</strong></li>
+</ul>
+<hr />
+<h3 id="-dexprotocol-1"><a class="header" href="#-dexprotocol-1">📦 DexProtocol</a></h3>
+<ul>
+<li><code>protocol_id</code> — <strong>Primary Key (PK)</strong></li>
+<li><code>chain_id</code> — <strong>Foreign Key (FK → Blockchain.chain_id)</strong></li>
+</ul>
+<hr />
+<h3 id="-liquiditypool-1"><a class="header" href="#-liquiditypool-1">📦 LiquidityPool</a></h3>
+<ul>
+<li><code>pool_id</code> — <strong>Primary Key (PK)</strong></li>
+<li><code>protocol_id</code> — <strong>Foreign Key (FK → DexProtocol.protocol_id)</strong></li>
+<li><code>token0_asset_id</code> — <strong>Foreign Key (FK → Asset.asset_id)</strong></li>
+<li><code>token1_asset_id</code> — <strong>Foreign Key (FK → Asset.asset_id)</strong></li>
+</ul>
+<hr />
+<h3 id="-poolstate-1"><a class="header" href="#-poolstate-1">📦 PoolState</a></h3>
+<ul>
+<li><code>pool_id</code> — <strong>Primary Key (PK), Foreign Key (FK → LiquidityPool.pool_id)</strong></li>
+</ul>
+<hr />
+<h3 id="-dexswap-1"><a class="header" href="#-dexswap-1">📦 DexSwap</a></h3>
+<ul>
+<li><code>tx_hash</code> — <strong>Primary Key (PK)</strong></li>
+<li><code>pool_id</code> — <strong>Foreign Key (FK → LiquidityPool.pool_id)</strong></li>
+<li><code>token_in_asset_id</code> — <strong>Foreign Key (FK → Asset.asset_id)</strong></li>
+<li><code>token_out_asset_id</code> — <strong>Foreign Key (FK → Asset.asset_id)</strong></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../Crypto_Market_Data/Data_Defination_Sheet/2-centralized-exchange-cex-integration.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../Crypto_Market_Data/Data_Defination_Sheet/4-price-aggregation--analytics-engine.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../Crypto_Market_Data/Data_Defination_Sheet/2-centralized-exchange-cex-integration.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../Crypto_Market_Data/Data_Defination_Sheet/4-price-aggregation--analytics-engine.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

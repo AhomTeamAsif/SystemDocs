@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>BLOCKCHAIN DATA INFRASTRUCTURE - SystemDocs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Crypto Market Data Aggregator</li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/feature_list.html"><strong aria-hidden="true">2.</strong> Features Overview </a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/1-blockchain-data-infrastructure.html" class="active"><strong aria-hidden="true">2.1.</strong> BLOCKCHAIN DATA INFRASTRUCTURE</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/2-centralized-exchange-cex-integration.html"><strong aria-hidden="true">2.2.</strong> CENTRALIZED EXCHANGE (CEX) INTEGRATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/3-decentralized-exchange-dex-integration.html"><strong aria-hidden="true">2.3.</strong> DECENTRALIZED EXCHANGE (DEX) INTEGRATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/4-price-aggregation--analytics-engine.html"><strong aria-hidden="true">2.4.</strong> PRICE AGGREGATION & ANALYTICS ENGINE</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/5-time-series-data-generation.html"><strong aria-hidden="true">2.5.</strong> TIME-SERIES DATA GENERATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/6-advanced-analytics-features.html"><strong aria-hidden="true">2.6.</strong> ADVANCED ANALYTICS FEATURES</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/7-user-authentication--authorization.html"><strong aria-hidden="true">2.7.</strong> USER AUTHENTICATION & AUTHORIZATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/8-api-key-management--authentication.html"><strong aria-hidden="true">2.8.</strong> API KEY MANAGEMENT & AUTHENTICATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/9-subscription--billing-management.html"><strong aria-hidden="true">2.9.</strong> SUBSCRIPTION & BILLING MANAGEMENT</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/10-rate-limiting--quota-management.html"><strong aria-hidden="true">2.10.</strong> RATE LIMITING & QUOTA MANAGEMENT</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/11-api--data-distribution.html"><strong aria-hidden="true">2.11.</strong> API & DATA DISTRIBUTION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/12-real-time-data-streaming.html"><strong aria-hidden="true">2.12.</strong> REAL-TIME DATA STREAMING</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/13-compliance--security.html"><strong aria-hidden="true">2.13.</strong> COMPLIANCE & SECURITY</a></li></ol></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/data_definition_sheet.html"><strong aria-hidden="true">3.</strong>  Data Definition Overview</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/1-blockchain-data-infrastructure.html"><strong aria-hidden="true">3.1.</strong> Blockchain Data Infrastructure</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/2-centralized-exchange-cex-integration.html"><strong aria-hidden="true">3.2.</strong> Centralized Exchange (CEX) Integration</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/3-decentralized-exchange-dex-integration.html"><strong aria-hidden="true">3.3.</strong> Decentralized Exchange (DEX) Integration</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/4-price-aggregation--analytics-engine.html"><strong aria-hidden="true">3.4.</strong> Price Aggregation & Analytics Engine</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/5-time-series-data-generation.html"><strong aria-hidden="true">3.5.</strong> Time-Series Data Generation</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/6-advanced-analytics-features.html"><strong aria-hidden="true">3.6.</strong> Advanced Analytics Features</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/7-api-key-management--authentication.html"><strong aria-hidden="true">3.7.</strong> API Key Management & Authentication</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/12-subscription--billing-management.html"><strong aria-hidden="true">3.8.</strong> Subscription & Billing Management</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/8-rate-limiting--quota-management.html"><strong aria-hidden="true">3.9.</strong> Rate Limiting & Quota Management</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/9-api-data-distribution.html"><strong aria-hidden="true">3.10.</strong> API & Data Distribution</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/10-real-time-data-streamin.html"><strong aria-hidden="true">3.11.</strong> Real-Time Data Streaming</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/11-compliance--security.html"><strong aria-hidden="true">3.12.</strong> Compliance & Security</a></li></ol></li><li class="chapter-item expanded "><a href="../../class_diagram.html"><strong aria-hidden="true">4.</strong> Class Diagram</a></li><li class="chapter-item expanded "><a href="../../er_diagram.html"><strong aria-hidden="true">5.</strong> ER Diagram</a></li><li class="chapter-item expanded "><a href="../../dfd.html"><strong aria-hidden="true">6.</strong> Data Flow Diagram (DFD)</a></li><li class="chapter-item expanded affix "><li class="part-title">RPC Node Provider Service</li><li class="chapter-item expanded "><a href="../../Introduction_rpc.html"><strong aria-hidden="true">7.</strong> RPC Node Provider Service</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">SystemDocs</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="blockchain-data-infrastructure"><a class="header" href="#blockchain-data-infrastructure">Blockchain Data Infrastructure</a></h1>
+<p>This module outlines the core components responsible for integrating, processing, and managing blockchain data across multiple networks. It ensures high-speed, reliable, and accurate data access necessary for real-time decentralized finance (DeFi) applications.</p>
+<hr />
+<h2 id="bc-001-multi-chain-node-integration"><a class="header" href="#bc-001-multi-chain-node-integration">BC-001: Multi-Chain Node Integration</a></h2>
+<p><strong>Description</strong><br />
+Establishes direct connections to over 100 blockchain networks, including Ethereum, Binance Smart Chain, Polygon, Avalanche, Arbitrum, and Solana. Supports both EVM and non-EVM chains through persistent WebSocket and RPC connections.</p>
+<p><strong>Why This Feature Exists</strong><br />
+Direct integration eliminates dependency on third-party providers, ensuring authenticity and reducing latency. It enables the platform to access raw blockchain data immediately upon block confirmation.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Maintain connections to 100+ blockchain networks</li>
+<li>Support both EVM and non-EVM chains</li>
+<li>Manage network-specific protocols and data formats</li>
+<li>Provide failover mechanisms for node connectivity</li>
+</ul>
+<hr />
+<h2 id="bc-002-real-time-block-processing"><a class="header" href="#bc-002-real-time-block-processing">BC-002: Real-Time Block Processing</a></h2>
+<p><strong>Description</strong><br />
+Processes each new block within 1–3 seconds of confirmation across all supported networks. Parses headers, extracts transaction data, and detects significant events.</p>
+<p><strong>Why This Feature Exists</strong><br />
+Block-level events drive the crypto market. Processing them in real-time ensures detection of swaps, transfers, and interactions instantly—providing accurate, up-to-date data to users.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Parse block data within 1–3 seconds of confirmation</li>
+<li>Extract all transactions and relevant details</li>
+<li>Detect DEX swaps, token transfers, smart contract interactions</li>
+<li>Handle high-throughput chains with sub-second block times</li>
+<li>Manage processing queues for simultaneous block events</li>
+</ul>
+<hr />
+<h2 id="bc-003-event-log-extraction"><a class="header" href="#bc-003-event-log-extraction">BC-003: Event Log Extraction</a></h2>
+<p><strong>Description</strong><br />
+Decodes smart contract events (e.g., swaps, mints, burns, liquidity changes) across 200+ DEX protocols using a contract ABI and signature database.</p>
+<p><strong>Why This Feature Exists</strong><br />
+Smart contract events provide the raw data for interpreting market activity. Accurate event extraction is critical for pricing, volume analytics, and liquidity monitoring.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Decode events from 200+ DEX protocols</li>
+<li>Maintain updated ABI databases for major contracts</li>
+<li>Handle proxy contracts and upgradeable implementations</li>
+<li>Extract pricing and volume data from AMM events</li>
+<li>Support multiple event formats and standards</li>
+</ul>
+<hr />
+<h2 id="bc-004-multi-node-redundancy"><a class="header" href="#bc-004-multi-node-redundancy">BC-004: Multi-Node Redundancy</a></h2>
+<p><strong>Description</strong><br />
+Implements automatic failover mechanisms between primary and backup nodes per blockchain network to ensure uninterrupted data flow.</p>
+<p><strong>Why This Feature Exists</strong><br />
+Blockchain nodes may become unresponsive or lag behind. Redundancy ensures high availability, uptime, and data consistency across networks.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Maintain multiple node connections per network</li>
+<li>Implement automatic failover logic</li>
+<li>Monitor node health and synchronization status</li>
+<li>Load-balance across active nodes</li>
+<li>Enable graceful degradation during failures</li>
+</ul>
+<hr />
+<h2 id="bc-005-chain-reorganization-handling"><a class="header" href="#bc-005-chain-reorganization-handling">BC-005: Chain Reorganization Handling</a></h2>
+<p><strong>Description</strong><br />
+Detects and manages blockchain reorganizations (reorgs) when previously confirmed blocks are invalidated due to longer chains being adopted.</p>
+<p><strong>Why This Feature Exists</strong><br />
+Reorgs can lead to incorrect data if not handled properly. This mechanism ensures that stale data is reverted and replaced with accurate, canonical information.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Detect reorganizations across all networks</li>
+<li>Revert invalidated data from orphaned blocks</li>
+<li>Reprocess data from the new canonical chain</li>
+<li>Notify downstream systems of corrections</li>
+<li>Maintain audit trails for all reorg events</li>
+</ul>
+<hr />
+<h2 id="-visual-references--diagrams"><a class="header" href="#-visual-references--diagrams">📊 Visual References &amp; Diagrams</a></h2>
+<p><a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635454190177&cot=14" target="_blank"> On-chain Data Scrapping </a></p>
+<p><a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635458959932&cot=14" target="_blank"> On-chain Data Processing </a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../Crypto_Market_Data/Feature_List/feature_list.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../Crypto_Market_Data/Feature_List/2-centralized-exchange-cex-integration.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../Crypto_Market_Data/Feature_List/feature_list.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../Crypto_Market_Data/Feature_List/2-centralized-exchange-cex-integration.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

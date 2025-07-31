@@ -1,0 +1,495 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Blockchain Data Infrastructure - SystemDocs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Crypto Market Data Aggregator</li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/feature_list.html"><strong aria-hidden="true">2.</strong> Features Overview </a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/1-blockchain-data-infrastructure.html"><strong aria-hidden="true">2.1.</strong> BLOCKCHAIN DATA INFRASTRUCTURE</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/2-centralized-exchange-cex-integration.html"><strong aria-hidden="true">2.2.</strong> CENTRALIZED EXCHANGE (CEX) INTEGRATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/3-decentralized-exchange-dex-integration.html"><strong aria-hidden="true">2.3.</strong> DECENTRALIZED EXCHANGE (DEX) INTEGRATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/4-price-aggregation--analytics-engine.html"><strong aria-hidden="true">2.4.</strong> PRICE AGGREGATION & ANALYTICS ENGINE</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/5-time-series-data-generation.html"><strong aria-hidden="true">2.5.</strong> TIME-SERIES DATA GENERATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/6-advanced-analytics-features.html"><strong aria-hidden="true">2.6.</strong> ADVANCED ANALYTICS FEATURES</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/7-user-authentication--authorization.html"><strong aria-hidden="true">2.7.</strong> USER AUTHENTICATION & AUTHORIZATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/8-api-key-management--authentication.html"><strong aria-hidden="true">2.8.</strong> API KEY MANAGEMENT & AUTHENTICATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/9-subscription--billing-management.html"><strong aria-hidden="true">2.9.</strong> SUBSCRIPTION & BILLING MANAGEMENT</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/10-rate-limiting--quota-management.html"><strong aria-hidden="true">2.10.</strong> RATE LIMITING & QUOTA MANAGEMENT</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/11-api--data-distribution.html"><strong aria-hidden="true">2.11.</strong> API & DATA DISTRIBUTION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/12-real-time-data-streaming.html"><strong aria-hidden="true">2.12.</strong> REAL-TIME DATA STREAMING</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/13-compliance--security.html"><strong aria-hidden="true">2.13.</strong> COMPLIANCE & SECURITY</a></li></ol></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/data_definition_sheet.html"><strong aria-hidden="true">3.</strong>  Data Definition Overview</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/1-blockchain-data-infrastructure.html" class="active"><strong aria-hidden="true">3.1.</strong> Blockchain Data Infrastructure</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/2-centralized-exchange-cex-integration.html"><strong aria-hidden="true">3.2.</strong> Centralized Exchange (CEX) Integration</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/3-decentralized-exchange-dex-integration.html"><strong aria-hidden="true">3.3.</strong> Decentralized Exchange (DEX) Integration</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/4-price-aggregation--analytics-engine.html"><strong aria-hidden="true">3.4.</strong> Price Aggregation & Analytics Engine</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/5-time-series-data-generation.html"><strong aria-hidden="true">3.5.</strong> Time-Series Data Generation</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/6-advanced-analytics-features.html"><strong aria-hidden="true">3.6.</strong> Advanced Analytics Features</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/7-api-key-management--authentication.html"><strong aria-hidden="true">3.7.</strong> API Key Management & Authentication</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/12-subscription--billing-management.html"><strong aria-hidden="true">3.8.</strong> Subscription & Billing Management</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/8-rate-limiting--quota-management.html"><strong aria-hidden="true">3.9.</strong> Rate Limiting & Quota Management</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/9-api-data-distribution.html"><strong aria-hidden="true">3.10.</strong> API & Data Distribution</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/10-real-time-data-streamin.html"><strong aria-hidden="true">3.11.</strong> Real-Time Data Streaming</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/11-compliance--security.html"><strong aria-hidden="true">3.12.</strong> Compliance & Security</a></li></ol></li><li class="chapter-item expanded "><a href="../../class_diagram.html"><strong aria-hidden="true">4.</strong> Class Diagram</a></li><li class="chapter-item expanded "><a href="../../er_diagram.html"><strong aria-hidden="true">5.</strong> ER Diagram</a></li><li class="chapter-item expanded "><a href="../../dfd.html"><strong aria-hidden="true">6.</strong> Data Flow Diagram (DFD)</a></li><li class="chapter-item expanded affix "><li class="part-title">RPC Node Provider Service</li><li class="chapter-item expanded "><a href="../../Introduction_rpc.html"><strong aria-hidden="true">7.</strong> RPC Node Provider Service</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">SystemDocs</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="blockchain-data-infrastructure"><a class="header" href="#blockchain-data-infrastructure">Blockchain Data Infrastructure</a></h1>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p>This document details the data models that support the platform's Blockchain Data Infrastructure features. These structures are designed to manage direct blockchain connections, real-time block processing, event extraction, and chain reorganization handling across 100+ blockchain networks. The primary purpose of these models is to ensure reliable data collection from multiple blockchain networks, maintain data accuracy during chain reorganizations, and provide comprehensive monitoring of node health and blockchain events.</p>
+<hr />
+<h2 id="relations-between-tables"><a class="header" href="#relations-between-tables">Relations between tables</a></h2>
+<ul>
+<li><strong>BlockchainNetwork &amp; Other Entities:</strong> The BlockchainNetwork table is the root of the hierarchy. It has one-to-many relationships with NodeConnection, BlockData, ChainReorganization, and ContractABI. This means a single defined network can have multiple node connections for redundancy, will produce a stream of blocks, can experience multiple reorganizations, and can have many known smart contracts.</li>
+<li><strong>NodeConnection &amp; Dependent Data:</strong> The NodeConnection table has a many-to-one relationship with BlockchainNetwork, as multiple nodes are used to monitor a single network. It also has one-to-many relationships with BlockData (the specific node that fetched a block is recorded) and NodeHealthMetric (a time-series of health data is stored for each node).</li>
+<li><strong>BlockData, TransactionData, &amp; EventLog:</strong> These tables form a clear hierarchy. BlockData has a one-to-many relationship with TransactionData (a block contains many transactions). TransactionData in turn has a one-to-many relationship with EventLog (a transaction can emit multiple events). For efficient querying, EventLog also maintains a direct foreign key to BlockData. All three tables link back to the BlockchainNetwork they belong to.</li>
+<li><strong>ContractABI &amp; EventLog:</strong> A one-to-many relationship exists where one ContractABI record can be used to decode many events in the EventLog table. The link is established by matching the EventLog.contract_address and EventLog.network_id to the composite primary key of the ContractABI table. This is crucial for event decoding.</li>
+<li><strong>ChainReorganization &amp; BlockchainNetwork:</strong> The ChainReorganization table has a many-to-one relationship with BlockchainNetwork. This allows the system to log every reorg event that occurs on a specific network, tracking the orphaned blocks and the new canonical chain for data correction purposes.</li>
+</ul>
+<hr />
+<h2 id="blockchainnetwork"><a class="header" href="#blockchainnetwork">BlockchainNetwork</a></h2>
+<p>Defines supported blockchain networks and their configuration parameters, supporting feature BC-001.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required?</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td>network_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Primary key for the blockchain network</td></tr>
+<tr><td>network_name</td><td>String</td><td>Yes</td><td>e.g., &quot;Ethereum&quot;, &quot;Polygon&quot;</td><td>Human-readable network name</td></tr>
+<tr><td>chain_id</td><td>Integer</td><td>Yes</td><td>Positive integer</td><td>Unique chain identifier (e.g., 1 for Ethereum mainnet)</td></tr>
+<tr><td>network_type</td><td>Enum</td><td>Yes</td><td>EVM, NON_EVM</td><td>Type of blockchain network</td></tr>
+<tr><td>native_currency</td><td>String</td><td>Yes</td><td>e.g., &quot;ETH&quot;, &quot;BNB&quot;</td><td>Native currency symbol</td></tr>
+<tr><td>block_time_seconds</td><td>Integer</td><td>Yes</td><td>Positive integer</td><td>Average time between blocks</td></tr>
+<tr><td>confirmation_blocks</td><td>Integer</td><td>Yes</td><td>Positive integer</td><td>Blocks required for transaction confirmation</td></tr>
+<tr><td>rpc_endpoints</td><td>JSON</td><td>Yes</td><td>JSON array</td><td>List of RPC endpoint URLs</td></tr>
+<tr><td>websocket_endpoints</td><td>JSON</td><td>Yes</td><td>JSON array</td><td>List of WebSocket endpoint URLs</td></tr>
+<tr><td>explorer_url</td><td>String</td><td>No</td><td>URL</td><td>Block explorer base URL</td></tr>
+<tr><td>is_testnet</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether this is a testnet</td></tr>
+<tr><td>is_active</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether network monitoring is active</td></tr>
+<tr><td>gas_token_symbol</td><td>String</td><td>No</td><td>e.g., &quot;ETH&quot;, &quot;MATIC&quot;</td><td>Symbol for gas/fee token</td></tr>
+<tr><td>decimals</td><td>Integer</td><td>Yes</td><td>Positive integer</td><td>Decimal places for native currency</td></tr>
+<tr><td>supports_logs</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether network supports event logs</td></tr>
+<tr><td>supports_trace</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether network supports transaction tracing</td></tr>
+<tr><td>max_block_gas_limit</td><td>BigInt</td><td>No</td><td>Positive integer</td><td>Maximum gas limit per block</td></tr>
+<tr><td>priority</td><td>Integer</td><td>Yes</td><td>1-100</td><td>Processing priority (higher = more important)</td></tr>
+<tr><td>health_check_interval_seconds</td><td>Integer</td><td>Yes</td><td>Positive integer</td><td>Seconds between health checks</td></tr>
+<tr><td>created_at</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>When network was added</td></tr>
+<tr><td>updated_at</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>When network configuration was last updated</td></tr>
+</tbody></table>
+</div>
+<p><strong>Keys:</strong></p>
+<ul>
+<li>Primary Key: <code>network_id</code></li>
+</ul>
+<hr />
+<h2 id="nodeconnection"><a class="header" href="#nodeconnection">NodeConnection</a></h2>
+<p>Manages individual node connections for blockchain networks, supporting features BC-001 and BC-004.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required?</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td>connection_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Primary key for the node connection</td></tr>
+<tr><td>network_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key linking to BlockchainNetwork</td></tr>
+<tr><td>node_url</td><td>String</td><td>Yes</td><td>URL</td><td>Full URL of the blockchain node</td></tr>
+<tr><td>connection_type</td><td>Enum</td><td>Yes</td><td>RPC_HTTP, RPC_HTTPS, WEBSOCKET, WEBSOCKET_SECURE</td><td>Type of connection</td></tr>
+<tr><td>node_provider</td><td>String</td><td>No</td><td>e.g., &quot;Infura&quot;, &quot;Alchemy&quot;</td><td>Node provider name</td></tr>
+<tr><td>is_primary</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether this is the primary node for the network</td></tr>
+<tr><td>priority</td><td>Integer</td><td>Yes</td><td>1-10</td><td>Connection priority for failover (1 = highest)</td></tr>
+<tr><td>status</td><td>Enum</td><td>Yes</td><td>ACTIVE, INACTIVE, FAILED, MAINTENANCE</td><td>Current connection status</td></tr>
+<tr><td>last_block_number</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Last processed block number</td></tr>
+<tr><td>last_successful_request</td><td>Timestamp</td><td>No</td><td>ISO 8601</td><td>When last successful request was made</td></tr>
+<tr><td>last_failed_request</td><td>Timestamp</td><td>No</td><td>ISO 8601</td><td>When last failed request occurred</td></tr>
+<tr><td>consecutive_failures</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Number of consecutive failures</td></tr>
+<tr><td>max_consecutive_failures</td><td>Integer</td><td>Yes</td><td>Positive integer</td><td>Maximum failures before marking as failed</td></tr>
+<tr><td>response_time_ms</td><td>Integer</td><td>No</td><td>Milliseconds</td><td>Average response time</td></tr>
+<tr><td>requests_per_second_limit</td><td>Integer</td><td>No</td><td>Positive integer</td><td>Rate limit for this node</td></tr>
+<tr><td>current_requests_per_second</td><td>Float</td><td>No</td><td>Non-negative float</td><td>Current request rate</td></tr>
+<tr><td>health_score</td><td>Integer</td><td>Yes</td><td>0-100</td><td>Overall health score (100 = excellent)</td></tr>
+<tr><td>sync_status</td><td>Enum</td><td>Yes</td><td>SYNCED, SYNCING, BEHIND, UNKNOWN</td><td>Node synchronization status</td></tr>
+<tr><td>peer_count</td><td>Integer</td><td>No</td><td>Non-negative integer</td><td>Number of connected peers</td></tr>
+<tr><td>is_archive_node</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether node maintains full historical data</td></tr>
+<tr><td>supports_websocket</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether node supports WebSocket connections</td></tr>
+<tr><td>api_key_required</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether API key is required</td></tr>
+<tr><td>connection_config</td><td>JSON</td><td>No</td><td>JSON object</td><td>Additional connection configuration</td></tr>
+<tr><td>created_at</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>When connection was established</td></tr>
+<tr><td>updated_at</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>When connection was last updated</td></tr>
+</tbody></table>
+</div>
+<p><strong>Keys:</strong></p>
+<ul>
+<li>Primary Key: <code>connection_id</code></li>
+<li>Foreign Key: <code>network_id</code> references <code>BlockchainNetwork.network_id</code></li>
+</ul>
+<hr />
+<h2 id="blockdata"><a class="header" href="#blockdata">BlockData</a></h2>
+<p>Stores processed block information from all blockchain networks, supporting feature BC-002.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required?</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td>block_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Primary key for the block record</td></tr>
+<tr><td>network_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key linking to BlockchainNetwork</td></tr>
+<tr><td>block_number</td><td>BigInt</td><td>Yes</td><td>Non-negative integer</td><td>Block number on the blockchain</td></tr>
+<tr><td>block_hash</td><td>String</td><td>Yes</td><td>Hex string</td><td>Unique hash of the block</td></tr>
+<tr><td>parent_hash</td><td>String</td><td>Yes</td><td>Hex string</td><td>Hash of the parent block</td></tr>
+<tr><td>timestamp</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>Block timestamp from blockchain</td></tr>
+<tr><td>processed_at</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>When block was processed by our system</td></tr>
+<tr><td>processing_time_ms</td><td>Integer</td><td>Yes</td><td>Milliseconds</td><td>Time taken to process this block</td></tr>
+<tr><td>transaction_count</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Number of transactions in block</td></tr>
+<tr><td>gas_used</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Total gas used in block</td></tr>
+<tr><td>gas_limit</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Gas limit for the block</td></tr>
+<tr><td>base_fee_per_gas</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Base fee per gas (EIP-1559 networks)</td></tr>
+<tr><td>difficulty</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Block difficulty</td></tr>
+<tr><td>total_difficulty</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Total chain difficulty at this block</td></tr>
+<tr><td>miner_address</td><td>String</td><td>No</td><td>Address</td><td>Address of block miner/validator</td></tr>
+<tr><td>extra_data</td><td>String</td><td>No</td><td>Hex string</td><td>Additional data included in block</td></tr>
+<tr><td>block_size_bytes</td><td>Integer</td><td>No</td><td>Positive integer</td><td>Size of block in bytes</td></tr>
+<tr><td>uncle_count</td><td>Integer</td><td>No</td><td>Non-negative integer</td><td>Number of uncle blocks (if applicable)</td></tr>
+<tr><td>is_canonical</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether block is part of canonical chain</td></tr>
+<tr><td>is_processed</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether all transactions have been processed</td></tr>
+<tr><td>event_count</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Number of events extracted from block</td></tr>
+<tr><td>swap_count</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Number of DEX swaps in block</td></tr>
+<tr><td>transfer_count</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Number of token transfers in block</td></tr>
+<tr><td>reorg_detected</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether this block was involved in a reorganization</td></tr>
+<tr><td>confirmation_status</td><td>Enum</td><td>Yes</td><td>PENDING, CONFIRMED, FINALIZED</td><td>Block confirmation status</td></tr>
+<tr><td>node_connection_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key to NodeConnection that processed this block</td></tr>
+<tr><td>raw_block_data</td><td>JSON</td><td>No</td><td>JSON object</td><td>Raw block data from node (for debugging)</td></tr>
+</tbody></table>
+</div>
+<p><strong>Keys:</strong></p>
+<ul>
+<li>Primary Key: <code>block_id</code></li>
+<li>Foreign Key: <code>network_id</code> references <code>BlockchainNetwork.network_id</code></li>
+<li>Foreign Key: <code>node_connection_id</code> references <code>NodeConnection.connection_id</code></li>
+</ul>
+<hr />
+<h2 id="transactiondata"><a class="header" href="#transactiondata">TransactionData</a></h2>
+<p>Contains individual transaction details extracted from blocks, supporting feature BC-002.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required?</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td>transaction_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Primary key for the transaction record</td></tr>
+<tr><td>block_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key linking to BlockData</td></tr>
+<tr><td>network_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key linking to BlockchainNetwork</td></tr>
+<tr><td>transaction_hash</td><td>String</td><td>Yes</td><td>Hex string</td><td>Unique transaction hash</td></tr>
+<tr><td>transaction_index</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Position of transaction in block</td></tr>
+<tr><td>from_address</td><td>String</td><td>Yes</td><td>Address</td><td>Sender address</td></tr>
+<tr><td>to_address</td><td>String</td><td>No</td><td>Address</td><td>Recipient address (null for contract creation)</td></tr>
+<tr><td>value</td><td>BigInt</td><td>Yes</td><td>Non-negative integer</td><td>Amount transferred in native currency</td></tr>
+<tr><td>gas_limit</td><td>BigInt</td><td>Yes</td><td>Positive integer</td><td>Gas limit set for transaction</td></tr>
+<tr><td>gas_used</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Actual gas used</td></tr>
+<tr><td>gas_price</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Gas price paid</td></tr>
+<tr><td>max_fee_per_gas</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Max fee per gas (EIP-1559)</td></tr>
+<tr><td>max_priority_fee_per_gas</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Max priority fee per gas (EIP-1559)</td></tr>
+<tr><td>nonce</td><td>BigInt</td><td>Yes</td><td>Non-negative integer</td><td>Sender's transaction nonce</td></tr>
+<tr><td>transaction_type</td><td>Integer</td><td>No</td><td>0-2</td><td>Transaction type (0=legacy, 1=EIP-2930, 2=EIP-1559)</td></tr>
+<tr><td>status</td><td>Enum</td><td>Yes</td><td>SUCCESS, FAILED, PENDING</td><td>Transaction execution status</td></tr>
+<tr><td>block_timestamp</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>Timestamp when transaction was mined</td></tr>
+<tr><td>is_contract_creation</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether transaction creates a contract</td></tr>
+<tr><td>created_contract_address</td><td>String</td><td>No</td><td>Address</td><td>Address of created contract (if applicable)</td></tr>
+<tr><td>input_data</td><td>Text</td><td>No</td><td>Hex string</td><td>Transaction input data</td></tr>
+<tr><td>logs_count</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Number of logs generated</td></tr>
+<tr><td>internal_transactions_count</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Number of internal transactions</td></tr>
+<tr><td>is_dex_interaction</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether transaction interacts with DEX</td></tr>
+<tr><td>swap_detected</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether transaction contains DEX swap</td></tr>
+<tr><td>token_transfers_count</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Number of token transfers</td></tr>
+<tr><td>error_message</td><td>Text</td><td>No</td><td>Free text</td><td>Error message if transaction failed</td></tr>
+<tr><td>cumulative_gas_used</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Cumulative gas used up to this transaction</td></tr>
+<tr><td>effective_gas_price</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Effective gas price paid</td></tr>
+</tbody></table>
+</div>
+<p><strong>Keys:</strong></p>
+<ul>
+<li>Primary Key: <code>transaction_id</code></li>
+<li>Foreign Key: <code>block_id</code> references <code>BlockData.block_id</code></li>
+<li>Foreign Key: <code>network_id</code> references <code>BlockchainNetwork.network_id</code></li>
+</ul>
+<hr />
+<h2 id="eventlog"><a class="header" href="#eventlog">EventLog</a></h2>
+<p>Stores decoded smart contract events, particularly DEX-related events, supporting feature BC-003.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required?</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td>event_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Primary key for the event log</td></tr>
+<tr><td>transaction_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key linking to TransactionData</td></tr>
+<tr><td>block_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key linking to BlockData</td></tr>
+<tr><td>network_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key linking to BlockchainNetwork</td></tr>
+<tr><td>log_index</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Position of log within transaction</td></tr>
+<tr><td>contract_address</td><td>String</td><td>Yes</td><td>Address</td><td>Address of contract that emitted the event</td></tr>
+<tr><td>event_signature</td><td>String</td><td>Yes</td><td>Hex string</td><td>Keccak256 hash of event signature</td></tr>
+<tr><td>event_name</td><td>String</td><td>No</td><td>e.g., &quot;Swap&quot;, &quot;Transfer&quot;</td><td>Human-readable event name</td></tr>
+<tr><td>topic_0</td><td>String</td><td>Yes</td><td>Hex string</td><td>First topic (event signature)</td></tr>
+<tr><td>topic_1</td><td>String</td><td>No</td><td>Hex string</td><td>Second topic (first indexed parameter)</td></tr>
+<tr><td>topic_2</td><td>String</td><td>No</td><td>Hex string</td><td>Third topic (second indexed parameter)</td></tr>
+<tr><td>topic_3</td><td>String</td><td>No</td><td>Hex string</td><td>Fourth topic (third indexed parameter)</td></tr>
+<tr><td>data</td><td>Text</td><td>Yes</td><td>Hex string</td><td>Non-indexed event data</td></tr>
+<tr><td>decoded_data</td><td>JSON</td><td>No</td><td>JSON object</td><td>Decoded event parameters</td></tr>
+<tr><td>event_type</td><td>Enum</td><td>Yes</td><td>SWAP, TRANSFER, MINT, BURN, SYNC, APPROVAL, OTHER</td><td>Categorized event type</td></tr>
+<tr><td>protocol_name</td><td>String</td><td>No</td><td>e.g., &quot;Uniswap V3&quot;</td><td>DEX/protocol name</td></tr>
+<tr><td>protocol_version</td><td>String</td><td>No</td><td>e.g., &quot;v3&quot;</td><td>Protocol version</td></tr>
+<tr><td>is_dex_event</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether event is from a DEX protocol</td></tr>
+<tr><td>token_0_address</td><td>String</td><td>No</td><td>Address</td><td>First token address (for swap events)</td></tr>
+<tr><td>token_1_address</td><td>String</td><td>No</td><td>Address</td><td>Second token address (for swap events)</td></tr>
+<tr><td>amount_0</td><td>BigInt</td><td>No</td><td>Integer</td><td>Amount of first token</td></tr>
+<tr><td>amount_1</td><td>BigInt</td><td>No</td><td>Integer</td><td>Amount of second token</td></tr>
+<tr><td>sender_address</td><td>String</td><td>No</td><td>Address</td><td>Address that initiated the swap</td></tr>
+<tr><td>recipient_address</td><td>String</td><td>No</td><td>Address</td><td>Address that received the output</td></tr>
+<tr><td>liquidity_delta</td><td>BigInt</td><td>No</td><td>Integer</td><td>Change in liquidity (for mint/burn events)</td></tr>
+<tr><td>sqrt_price_x96</td><td>BigInt</td><td>No</td><td>Integer</td><td>Square root price (for AMM events)</td></tr>
+<tr><td>tick</td><td>Integer</td><td>No</td><td>Integer</td><td>Current tick (for concentrated liquidity)</td></tr>
+<tr><td>fee_tier</td><td>Integer</td><td>No</td><td>Non-negative integer</td><td>Fee tier for the pool</td></tr>
+<tr><td>block_timestamp</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>Timestamp when event was emitted</td></tr>
+<tr><td>is_removed</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether log was removed due to reorg</td></tr>
+</tbody></table>
+</div>
+<p><strong>Keys:</strong></p>
+<ul>
+<li>Primary Key: <code>event_id</code></li>
+<li>Foreign Key: <code>transaction_id</code> references <code>TransactionData.transaction_id</code></li>
+<li>Foreign Key: <code>block_id</code> references <code>BlockData.block_id</code></li>
+<li>Foreign Key: <code>network_id</code> references <code>BlockchainNetwork.network_id</code></li>
+<li>Foreign Key: <code>(contract_address, network_id)</code> references <code>ContractABI.(contract_address, network_id)</code></li>
+</ul>
+<hr />
+<h2 id="contractabi"><a class="header" href="#contractabi">ContractABI</a></h2>
+<p>Maintains ABI information for smart contracts to enable event decoding, supporting feature BC-003.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required?</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td>contract_address</td><td>String</td><td>Yes</td><td>Address</td><td>Contract address. Primary key</td></tr>
+<tr><td>network_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key linking to BlockchainNetwork. Part of composite key</td></tr>
+<tr><td>contract_name</td><td>String</td><td>No</td><td>Free text</td><td>Human-readable contract name</td></tr>
+<tr><td>abi_json</td><td>JSON</td><td>Yes</td><td>JSON array</td><td>Complete ABI definition</td></tr>
+<tr><td>abi_hash</td><td>String</td><td>Yes</td><td>Hash</td><td>SHA-256 hash of ABI JSON</td></tr>
+<tr><td>is_proxy</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether contract is a proxy</td></tr>
+<tr><td>implementation_address</td><td>String</td><td>No</td><td>Address</td><td>Implementation address (for proxy contracts)</td></tr>
+<tr><td>proxy_type</td><td>Enum</td><td>No</td><td>EIP1967, EIP1822, TRANSPARENT, BEACON</td><td>Type of proxy pattern</td></tr>
+<tr><td>verified</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether ABI is verified</td></tr>
+<tr><td>verification_source</td><td>String</td><td>No</td><td>e.g., &quot;Etherscan&quot;</td><td>Source of ABI verification</td></tr>
+<tr><td>protocol_category</td><td>Enum</td><td>No</td><td>DEX, LENDING, BRIDGE, NFT, DEFI, OTHER</td><td>Protocol category</td></tr>
+<tr><td>created_at</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>When ABI was added</td></tr>
+<tr><td>updated_at</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>When ABI was last updated</td></tr>
+</tbody></table>
+</div>
+<p><strong>Keys:</strong></p>
+<ul>
+<li>Primary Key: <code>(contract_address, network_id)</code></li>
+<li>Foreign Key: <code>network_id</code> references <code>BlockchainNetwork.network_id</code></li>
+</ul>
+<hr />
+<h2 id="chainreorganization"><a class="header" href="#chainreorganization">ChainReorganization</a></h2>
+<p>Tracks blockchain reorganization events and their impact, supporting feature BC-005.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required?</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td>reorg_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Primary key for the reorganization event</td></tr>
+<tr><td>network_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key linking to BlockchainNetwork</td></tr>
+<tr><td>detected_at</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>When reorganization was detected</td></tr>
+<tr><td>reorg_depth</td><td>Integer</td><td>Yes</td><td>Positive integer</td><td>Number of blocks affected by reorg</td></tr>
+<tr><td>old_chain_tip_hash</td><td>String</td><td>Yes</td><td>Hex string</td><td>Hash of old chain tip before reorg</td></tr>
+<tr><td>new_chain_tip_hash</td><td>String</td><td>Yes</td><td>Hex string</td><td>Hash of new chain tip after reorg</td></tr>
+<tr><td>fork_block_number</td><td>BigInt</td><td>Yes</td><td>Non-negative integer</td><td>Block number where chains diverged</td></tr>
+<tr><td>fork_block_hash</td><td>String</td><td>Yes</td><td>Hex string</td><td>Hash of the fork point block</td></tr>
+<tr><td>orphaned_blocks</td><td>JSON</td><td>Yes</td><td>JSON array</td><td>List of orphaned block hashes</td></tr>
+<tr><td>new_blocks</td><td>JSON</td><td>Yes</td><td>JSON array</td><td>List of new canonical block hashes</td></tr>
+<tr><td>affected_transactions</td><td>JSON</td><td>No</td><td>JSON array</td><td>Transactions that were invalidated</td></tr>
+<tr><td>reprocessing_status</td><td>Enum</td><td>Yes</td><td>PENDING, IN_PROGRESS, COMPLETED, FAILED</td><td>Status of data reprocessing</td></tr>
+<tr><td>reprocessing_started_at</td><td>Timestamp</td><td>No</td><td>ISO 8601</td><td>When reprocessing began</td></tr>
+<tr><td>reprocessing_completed_at</td><td>Timestamp</td><td>No</td><td>ISO 8601</td><td>When reprocessing finished</td></tr>
+<tr><td>data_corrections_made</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Number of data corrections applied</td></tr>
+<tr><td>downstream_notifications_sent</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether downstream systems were notified</td></tr>
+<tr><td>severity</td><td>Enum</td><td>Yes</td><td>LOW, MEDIUM,HIGH, CRITICAL</td><td>Severity of the reorganization</td></tr>
+<tr><td>impact_assessment</td><td>Text</td><td>No</td><td>Free text</td><td>Assessment of reorg impact</td></tr>
+<tr><td>resolution_notes</td><td>Text</td><td>No</td><td>Free text</td><td>Notes on how reorg was handled</td></tr>
+</tbody></table>
+</div>
+<p><strong>Keys:</strong></p>
+<ul>
+<li>Primary Key: <code>reorg_id</code></li>
+<li>Foreign Key: <code>network_id</code> references <code>BlockchainNetwork.network_id</code></li>
+</ul>
+<hr />
+<h2 id="nodehealthmetric"><a class="header" href="#nodehealthmetric">NodeHealthMetric</a></h2>
+<p>Time-series data tracking node health and performance, supporting feature BC-004.</p>
+<div class="table-wrapper"><table><thead><tr><th>Field Name</th><th>Type</th><th>Required?</th><th>Format</th><th>Description</th></tr></thead><tbody>
+<tr><td>connection_id</td><td>UUID</td><td>Yes</td><td>UUID</td><td>Foreign key to NodeConnection. Part of composite key</td></tr>
+<tr><td>timestamp</td><td>Timestamp</td><td>Yes</td><td>ISO 8601</td><td>When metrics were recorded. Part of composite key</td></tr>
+<tr><td>is_responsive</td><td>Boolean</td><td>Yes</td><td>true/false</td><td>Whether node is responding to requests</td></tr>
+<tr><td>response_time_ms</td><td>Integer</td><td>No</td><td>Milliseconds</td><td>Response time for health check</td></tr>
+<tr><td>current_block_number</td><td>BigInt</td><td>No</td><td>Non-negative integer</td><td>Current block number reported by node</td></tr>
+<tr><td>blocks_behind</td><td>Integer</td><td>No</td><td>Non-negative integer</td><td>How many blocks behind the node is</td></tr>
+<tr><td>peer_count</td><td>Integer</td><td>No</td><td>Non-negative integer</td><td>Number of connected peers</td></tr>
+<tr><td>sync_percentage</td><td>Float</td><td>No</td><td>0.0 - 100.0</td><td>Synchronization percentage</td></tr>
+<tr><td>requests_successful</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Successful requests in measurement window</td></tr>
+<tr><td>requests_failed</td><td>Integer</td><td>Yes</td><td>Non-negative integer</td><td>Failed requests in measurement window</td></tr>
+<tr><td>error_rate</td><td>Float</td><td>Yes</td><td>0.0 - 1.0</td><td>Error rate for the measurement period</td></tr>
+<tr><td>cpu_usage</td><td>Float</td><td>No</td><td>0.0 - 100.0</td><td>CPU usage percentage (if available)</td></tr>
+<tr><td>memory_usage</td><td>Float</td><td>No</td><td>0.0 - 100.0</td><td>Memory usage percentage (if available)</td></tr>
+<tr><td>disk_usage</td><td>Float</td><td>No</td><td>0.0 - 100.0</td><td>Disk usage percentage (if available)</td></tr>
+<tr><td>network_latency_ms</td><td>Integer</td><td>No</td><td>Milliseconds</td><td>Network latency to node</td></tr>
+<tr><td>health_score</td><td>Integer</td><td>Yes</td><td>0-100</td><td>Calculated health score</td></tr>
+</tbody></table>
+</div>
+<p><strong>Keys:</strong></p>
+<ul>
+<li>Primary Key: <code>(connection_id, timestamp)</code></li>
+<li>Foreign Key: <code>connection_id</code> references <code>NodeConnection.connection_id</code></li>
+</ul>
+<hr />
+<h2 id="summary-of-relationships"><a class="header" href="#summary-of-relationships">Summary of Relationships</a></h2>
+<ul>
+<li><code>BlockchainNetwork [network_id (PK)] 1 =&gt; * NodeConnection [network_id (FK)]</code></li>
+<li><code>BlockchainNetwork [network_id (PK)] 1 =&gt; * BlockData [network_id (FK)]</code></li>
+<li><code>BlockchainNetwork [network_id (PK)] 1 =&gt; * TransactionData [network_id (FK)]</code></li>
+<li><code>BlockchainNetwork [network_id (PK)] 1 =&gt; * EventLog [network_id (FK)]</code></li>
+<li><code>BlockchainNetwork [network_id (PK)] 1 =&gt; * ContractABI [network_id (FK)]</code></li>
+<li><code>BlockchainNetwork [network_id (PK)] 1 =&gt; * ChainReorganization [network_id (FK)]</code></li>
+<li><code>NodeConnection [connection_id (PK)] 1 =&gt; * BlockData [node_connection_id (FK)]</code></li>
+<li><code>NodeConnection [connection_id (PK)] 1 =&gt; * NodeHealthMetric [connection_id (FK)]</code></li>
+<li><code>BlockData [block_id (PK)] 1 =&gt; * TransactionData [block_id (FK)]</code></li>
+<li><code>BlockData [block_id (PK)] 1 =&gt; * EventLog [block_id (FK)]</code></li>
+<li><code>TransactionData [transaction_id (PK)] 1 =&gt; * EventLog [transaction_id (FK)]</code></li>
+<li><code>ContractABI [contract_address, network_id (PK)] 1 =&gt; * EventLog [contract_address, network_id (FK)]</code></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../Crypto_Market_Data/Data_Defination_Sheet/data_definition_sheet.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../Crypto_Market_Data/Data_Defination_Sheet/2-centralized-exchange-cex-integration.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../Crypto_Market_Data/Data_Defination_Sheet/data_definition_sheet.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../Crypto_Market_Data/Data_Defination_Sheet/2-centralized-exchange-cex-integration.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

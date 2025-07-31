@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>CENTRALIZED EXCHANGE (CEX) INTEGRATION - SystemDocs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Crypto Market Data Aggregator</li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/feature_list.html"><strong aria-hidden="true">2.</strong> Features Overview </a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/1-blockchain-data-infrastructure.html"><strong aria-hidden="true">2.1.</strong> BLOCKCHAIN DATA INFRASTRUCTURE</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/2-centralized-exchange-cex-integration.html" class="active"><strong aria-hidden="true">2.2.</strong> CENTRALIZED EXCHANGE (CEX) INTEGRATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/3-decentralized-exchange-dex-integration.html"><strong aria-hidden="true">2.3.</strong> DECENTRALIZED EXCHANGE (DEX) INTEGRATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/4-price-aggregation--analytics-engine.html"><strong aria-hidden="true">2.4.</strong> PRICE AGGREGATION & ANALYTICS ENGINE</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/5-time-series-data-generation.html"><strong aria-hidden="true">2.5.</strong> TIME-SERIES DATA GENERATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/6-advanced-analytics-features.html"><strong aria-hidden="true">2.6.</strong> ADVANCED ANALYTICS FEATURES</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/7-user-authentication--authorization.html"><strong aria-hidden="true">2.7.</strong> USER AUTHENTICATION & AUTHORIZATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/8-api-key-management--authentication.html"><strong aria-hidden="true">2.8.</strong> API KEY MANAGEMENT & AUTHENTICATION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/9-subscription--billing-management.html"><strong aria-hidden="true">2.9.</strong> SUBSCRIPTION & BILLING MANAGEMENT</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/10-rate-limiting--quota-management.html"><strong aria-hidden="true">2.10.</strong> RATE LIMITING & QUOTA MANAGEMENT</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/11-api--data-distribution.html"><strong aria-hidden="true">2.11.</strong> API & DATA DISTRIBUTION</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/12-real-time-data-streaming.html"><strong aria-hidden="true">2.12.</strong> REAL-TIME DATA STREAMING</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Feature_List/13-compliance--security.html"><strong aria-hidden="true">2.13.</strong> COMPLIANCE & SECURITY</a></li></ol></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/data_definition_sheet.html"><strong aria-hidden="true">3.</strong>  Data Definition Overview</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/1-blockchain-data-infrastructure.html"><strong aria-hidden="true">3.1.</strong> Blockchain Data Infrastructure</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/2-centralized-exchange-cex-integration.html"><strong aria-hidden="true">3.2.</strong> Centralized Exchange (CEX) Integration</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/3-decentralized-exchange-dex-integration.html"><strong aria-hidden="true">3.3.</strong> Decentralized Exchange (DEX) Integration</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/4-price-aggregation--analytics-engine.html"><strong aria-hidden="true">3.4.</strong> Price Aggregation & Analytics Engine</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/5-time-series-data-generation.html"><strong aria-hidden="true">3.5.</strong> Time-Series Data Generation</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/6-advanced-analytics-features.html"><strong aria-hidden="true">3.6.</strong> Advanced Analytics Features</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/7-api-key-management--authentication.html"><strong aria-hidden="true">3.7.</strong> API Key Management & Authentication</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/12-subscription--billing-management.html"><strong aria-hidden="true">3.8.</strong> Subscription & Billing Management</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/8-rate-limiting--quota-management.html"><strong aria-hidden="true">3.9.</strong> Rate Limiting & Quota Management</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/9-api-data-distribution.html"><strong aria-hidden="true">3.10.</strong> API & Data Distribution</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/10-real-time-data-streamin.html"><strong aria-hidden="true">3.11.</strong> Real-Time Data Streaming</a></li><li class="chapter-item expanded "><a href="../../Crypto_Market_Data/Data_Defination_Sheet/11-compliance--security.html"><strong aria-hidden="true">3.12.</strong> Compliance & Security</a></li></ol></li><li class="chapter-item expanded "><a href="../../class_diagram.html"><strong aria-hidden="true">4.</strong> Class Diagram</a></li><li class="chapter-item expanded "><a href="../../er_diagram.html"><strong aria-hidden="true">5.</strong> ER Diagram</a></li><li class="chapter-item expanded "><a href="../../dfd.html"><strong aria-hidden="true">6.</strong> Data Flow Diagram (DFD)</a></li><li class="chapter-item expanded affix "><li class="part-title">RPC Node Provider Service</li><li class="chapter-item expanded "><a href="../../Introduction_rpc.html"><strong aria-hidden="true">7.</strong> RPC Node Provider Service</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">SystemDocs</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="centralized-exchange-cex-integration"><a class="header" href="#centralized-exchange-cex-integration">Centralized Exchange (CEX) Integration</a></h1>
+<p>This module focuses on connecting to a wide range of centralized cryptocurrency exchanges to collect market data, trade history, and monitor exchange health, enabling comprehensive and reliable market insights.</p>
+<hr />
+<h2 id="cex-001-multi-exchange-api-integration"><a class="header" href="#cex-001-multi-exchange-api-integration">CEX-001: Multi-Exchange API Integration</a></h2>
+<p><strong>Description</strong><br />
+Establishes direct connections to over 100 centralized exchanges using both REST APIs and WebSocket feeds. It handles diverse API specifications, authentication methods, and provides a unified data collection framework.</p>
+<p><strong>Why This Feature Exists</strong><br />
+Centralized exchanges dominate trading volume and price discovery. Integrating many exchanges ensures broad market coverage, redundancy against outages, and access to diverse trading pairs.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Connect to 100+ centralized exchanges</li>
+<li>Support various authentication methods (API keys, OAuth, etc.)</li>
+<li>Handle multiple API formats and protocols (REST, WebSocket)</li>
+<li>Manage exchange-specific configurations and updates</li>
+</ul>
+<hr />
+<h2 id="cex-002-real-time-price-feeds"><a class="header" href="#cex-002-real-time-price-feeds">CEX-002: Real-Time Price Feeds</a></h2>
+<p><strong>Description</strong><br />
+Collects live price updates from all connected exchanges with sub-100 millisecond latency, normalizing data and distributing updates efficiently to downstream consumers.</p>
+<p><strong>Why This Feature Exists</strong><br />
+Prices fluctuate rapidly in crypto markets. Real-time feeds enable timely trading decisions, arbitrage opportunities, and accurate market snapshots.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Collect price updates with &lt;100ms latency</li>
+<li>Handle high-frequency updates and spikes</li>
+<li>Normalize prices across exchanges for consistency</li>
+<li>Detect and filter erroneous or outlier data</li>
+<li>Distribute updates via low-latency channels</li>
+</ul>
+<hr />
+<h2 id="cex-003-trade-history-collection"><a class="header" href="#cex-003-trade-history-collection">CEX-003: Trade History Collection</a></h2>
+<p><strong>Description</strong><br />
+Gathers comprehensive trade execution data from all exchanges, including price, volume, timestamp, and trade direction. Supports replay and historical analysis.</p>
+<p><strong>Why This Feature Exists</strong><br />
+Trade history underpins volume metrics, technical indicators, and market analysis, revealing true trading activity beyond just price data.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Collect real-time trade executions</li>
+<li>Store detailed data: price, volume, time, side (buy/sell)</li>
+<li>Handle trade corrections and cancellations</li>
+<li>Support multiple trade types (market, limit, stop)</li>
+<li>Provide historical replay functionality</li>
+</ul>
+<hr />
+<h2 id="cex-004-exchange-health-monitoring"><a class="header" href="#cex-004-exchange-health-monitoring">CEX-004: Exchange Health Monitoring</a></h2>
+<p><strong>Description</strong><br />
+Continuously tracks API response times, error rates, availability, and data quality metrics for all connected exchanges, providing reliability scores and alerting on issues.</p>
+<p><strong>Why This Feature Exists</strong><br />
+Exchange APIs vary in reliability. Monitoring health ensures data accuracy, allows dynamic data source weighting, and triggers failover if needed.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Monitor API response time and uptime</li>
+<li>Track error rates and timeouts</li>
+<li>Assess and score data quality and consistency</li>
+<li>Generate reliability metrics for exchanges</li>
+<li>Alert operators on exchange-specific issues</li>
+</ul>
+<hr />
+<h2 id="cex-005-rate-limit-management"><a class="header" href="#cex-005-rate-limit-management">CEX-005: Rate Limit Management</a></h2>
+<p><strong>Description</strong><br />
+Intelligently manages API rate limits across exchanges through request queuing, prioritization, and throttling to maximize data throughput without violating usage policies.</p>
+<p><strong>Why This Feature Exists</strong><br />
+Exchanges impose strict API rate limits; exceeding them causes bans or suspensions. Managing limits smartly ensures uninterrupted data collection.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Track rate limits per exchange and endpoint</li>
+<li>Queue and prioritize API requests dynamically</li>
+<li>Throttle requests based on real-time usage</li>
+<li>Predict and prevent potential rate limit violations</li>
+<li>Optimize request patterns for efficiency</li>
+</ul>
+<hr />
+<h2 id="-visual-references--diagrams"><a class="header" href="#-visual-references--diagrams">📊 Visual References &amp; Diagrams</a></h2>
+<p><a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764635931036520&cot=14" target="_blank"> CEX Integration Data Flow </a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../Crypto_Market_Data/Feature_List/1-blockchain-data-infrastructure.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../Crypto_Market_Data/Feature_List/3-decentralized-exchange-dex-integration.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../Crypto_Market_Data/Feature_List/1-blockchain-data-infrastructure.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../Crypto_Market_Data/Feature_List/3-decentralized-exchange-dex-integration.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
