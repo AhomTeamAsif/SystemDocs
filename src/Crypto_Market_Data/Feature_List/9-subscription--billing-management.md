@@ -105,4 +105,4 @@ Enterprise clients require tailored agreements beyond standard subscriptions, su
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 Subscription & Bill Managemnet Data Entities & Relations ](../Data_Defination_Sheet/12-subscription--billing-management.md){:target="\_blank"}
+<a href="../Data_Defination_Sheet/12-subscription--billing-management.md" target="_blank">🔗 Subscription & Billing Management Data Entities & Relations</a>

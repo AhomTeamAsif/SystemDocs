@@ -101,4 +101,4 @@ Reorgs can lead to incorrect data if not handled properly. This mechanism ensure
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 On-chain Data Scraping & Processing Data Entities & Relations ](../Data_Defination_Sheet/1-blockchain-data-infrastructure.md){:target="\_blank"}
+<a href = "../Data_Defination_Sheet/1-blockchain-data-infrastructure.md" target="_blank" >🔗 On-chain Data Scraping & Processing Data Entities & Relations </a>

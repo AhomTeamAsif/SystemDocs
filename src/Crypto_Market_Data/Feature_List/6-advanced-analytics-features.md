@@ -64,4 +64,4 @@ Volatility is crucial for trading strategies, option pricing, and risk managemen
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 Advanced Data Entities & Relations ](../Data_Defination_Sheet/6-advanced-analytics-features.md){:target="\_blank"}
+<a href="../Data_Defination_Sheet/6-advanced-analytics-features.md" target="_blank">🔗 Advanced Data Entities & Relations</a>

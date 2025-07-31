@@ -86,4 +86,4 @@ Tokens often exist on multiple chains, and price differences can be exploited. C
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 Decentralized Data Entities & Relations ](../Data_Defination_Sheet/3-decentralized-exchange-dex-integration.md){:target="\_blank"}
+<a href="../Data_Defination_Sheet/3-decentralized-exchange-dex-integration.md" target="_blank">🔗 Decentralized Data Entities & Relations</a>

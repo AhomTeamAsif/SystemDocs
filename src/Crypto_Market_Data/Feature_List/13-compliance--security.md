@@ -48,4 +48,4 @@ APIs are common targets for attacks; robust defenses maintain availability and p
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 Compilanace & Security Management Data Entities & Relations ](../Data_Defination_Sheet/11-compliance--security.md){:target="\_blank"}
+<a href="../Data_Defination_Sheet/11-compliance--security.md" target="_blank">🔗 Compliance & Security Management Data Entities & Relations</a>

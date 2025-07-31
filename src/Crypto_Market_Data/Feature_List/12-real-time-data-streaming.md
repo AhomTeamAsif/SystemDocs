@@ -46,4 +46,4 @@ Users require timely alerts on important events even when not actively monitorin
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 Real Time Data Streaming Data Entities & Relations ](../Data_Defination_Sheet/10-real-time-data-streamin.md){:target="\_blank"}
+<a href="../Data_Defination_Sheet/10-real-time-data-streamin.md" target="_blank">🔗 Real Time Data Streaming Data Entities & Relations</a>

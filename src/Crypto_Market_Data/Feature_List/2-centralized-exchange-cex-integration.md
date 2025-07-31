@@ -99,4 +99,4 @@ Exchanges impose strict API rate limits; exceeding them causes bans or suspensio
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 CEX Data Scraping & Processing Data Entities & Relations](../Data_Defination_Sheet/2-centralized-exchange-cex-integration.md){:target="\_blank"}
+<a href="../Data_Defination_Sheet/2-centralized-exchange-cex-integration.md" target="_blank">🔗 CEX Data Scraping & Processing Data Entities & Relations</a>

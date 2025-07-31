@@ -6,6 +6,6 @@ We have an **Entity-Relationship (ER) Diagram** that captures the data model arc
 
 The ER diagram is maintained on an external collaboration board for visualization. You can access it using the link below:
 
-[🔗 ER Diagram Of The Data Entities & Relations](https://miro.com/app/board/uXjVJa9ArwQ=/?moveToWidget=3458764635552276820&cot=14){:target="\_blank"}
+<a href="https://miro.com/app/board/uXjVJa9ArwQ=/?moveToWidget=3458764635552276820&cot=14" target="_blank">🔗 ER Diagram Of The Data Entities & Relations</a>
 
 > 📌 The ER diagram serves as a foundational reference for database schema design, API integration, analytics pipelines, and compliance logic.

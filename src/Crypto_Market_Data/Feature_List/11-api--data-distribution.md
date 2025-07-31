@@ -118,4 +118,4 @@ Researchers and quantitative analysts require bulk historical datasets for analy
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 API Data Distrubution Data Entities & Relations ](../Data_Defination_Sheet/9-api-data-distribution.md){:target="\_blank"}
+<a href="../Data_Defination_Sheet/9-api-data-distribution.md" target="_blank">🔗 API Data Distribution Data Entities & Relations</a>

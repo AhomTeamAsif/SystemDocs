@@ -84,4 +84,4 @@ Different applications need different access levels. Scoped keys reduce security
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 API Key Managemnet Data Entities & Relations ](../Data_Defination_Sheet/7-api-key-management--authentication.md){:target="\_blank"}
+<a href="../Data_Defination_Sheet/7-api-key-management--authentication.md" target="_blank">🔗 API Key Management Data Entities & Relations</a>

@@ -86,4 +86,4 @@ Ensures optimal resource use and flexibility to adapt to changing conditions.
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 API Rate-Limiting Management Data Entities ](../Data_Defination_Sheet/7-api-key-management--authentication.md){:target="\_blank"}
+<a href="../Data_Defination_Sheet/7-api-key-management--authentication.md" target="_blank">🔗 API Rate-Limiting Management Data Entities</a>

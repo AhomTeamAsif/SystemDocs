@@ -101,4 +101,4 @@ Fair value provides a baseline for evaluating current prices and identifying goo
 
 # 📊 Data Definition and Entity Relations
 
-[🔗 Price Aggregation Data Entities & Relations ](../Data_Defination_Sheet/4-price-aggregation--analytics-engine.md){:target="\_blank"}
+<a href="../Data_Defination_Sheet/4-price-aggregation--analytics-engine.md" target="_blank">🔗 Price Aggregation Data Entities & Relations</a>
