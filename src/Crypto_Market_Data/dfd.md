@@ -134,4 +134,10 @@ Below is the list of modules for which DFDs have been prepared:
 
 ---
 
+### 🔹Level - 2 DFD
+
+**Description**: Level-2 DFD for all the features in granular level flow for each process
+
+<a href="https://miro.com/app/board/uXjVJbMT7pg=/?moveToWidget=3458764636161337175&cot=14" target="_blank"> Level-2 DFD </a>
+
 > 💡 As diagrams are externally hosted, Please check it via their visualizer and ensure you have access to the shared visualization platform." (e.g.Miro).
