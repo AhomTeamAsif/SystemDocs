@@ -1,7 +1,12 @@
-# 4. Class Diagram
+## 📊 Class Diagram
 
-This section will soon include the complete **Class Diagram** illustrating all major features and their relationships.
+This section presents the complete **Class Diagram** illustrating all major features and their interrelationships.
 
-Once added, this section will serve as the visual and structural reference for how the platform components interact. It will map each feature to its corresponding **data definitions** and provide clarity on object relations, attributes, and methods used across the system.
+It serves as a visual and structural reference for how the platform components interact. The diagram maps each feature to its corresponding **data definitions**, clarifies object relationships, and outlines the key attributes and methods used throughout the system.
 
-> 📌 **Note:** The diagram will be updated soon as the system evolves to reflect the most accurate architecture and implementation details.
+> 🖼️ **Diagram Access:**
+
+> <a href="https://miro.com/app/board/uXjVJajZrHc=/?moveToWidget=3458764636110914851&cot=14" target="_blank"> You can view the full class diagram </a>
+
+> 📌 **Note:**  
+> The diagram will be periodically updated as the system evolves to reflect the latest architecture and implementation details.
