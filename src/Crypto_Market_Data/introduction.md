@@ -12,7 +12,7 @@ This platform delivers institutional-grade cryptocurrency market intelligence th
 
 - **100+ blockchain networks** with real-time node integration
 - **200+ decentralized exchanges** with automated liquidity tracking
-- **100+ centralized exchanges** with sub-100ms price feeds
+- **100+ centralized exchanges** with sub- 1M price feeds
 
 Inspired by CoinGecko and CoinMarketCap, we provide mathematically-verified market data for trading systems, analysts, and blockchain applications.
 
